@@ -2,22 +2,22 @@ library(DataCombine)
 library(dplyr)
 library(reshape2)
 
-features<- read.table("./data/UCI HAR Dataset/features.txt",header = FALSE,sep = "")
+features<- read.table("./UCI HAR Dataset/features.txt",header = FALSE,sep = "")
 features$V2<-as.character(features$V2)
 features[562,]<-c(562,"act")
 
-activity<- read.table("./data/UCI HAR Dataset/activity_labels.txt",header = FALSE,sep = "")
+activity<- read.table("./UCI HAR Dataset/activity_labels.txt",header = FALSE,sep = "")
 volunteer_test<-read.table("./data/UCI HAR Dataset/test/subject_test.txt",header = FALSE,sep = "")
 
-test_set<-read.table("./data/UCI HAR Dataset/test/X_test.txt",header = FALSE,sep = "")
-test_set_activity<-read.table("./data/UCI HAR Dataset/test/Y_test.txt",header = FALSE,sep = "")
+test_set<-read.table("./UCI HAR Dataset/test/X_test.txt",header = FALSE,sep = "")
+test_set_activity<-read.table("./UCI HAR Dataset/test/Y_test.txt",header = FALSE,sep = "")
 test_set<-mutate(test_set,act=as.numeric(test_set_activity$V1))
-test_subject<-read.table("./data/UCI HAR Dataset/test/subject_test.txt",header = FALSE,sep = "")
+test_subject<-read.table("./UCI HAR Dataset/test/subject_test.txt",header = FALSE,sep = "")
 
-train_set<-read.table("./data/UCI HAR Dataset/train/X_train.txt",header = FALSE,sep = "")
-train_set_activity<-read.table("./data/UCI HAR Dataset/train/Y_train.txt",header = FALSE,sep = "")
+train_set<-read.table("./UCI HAR Dataset/train/X_train.txt",header = FALSE,sep = "")
+train_set_activity<-read.table("./UCI HAR Dataset/train/Y_train.txt",header = FALSE,sep = "")
 train_set<-mutate(train_set,act=as.numeric(train_set_activity$V1))
-train_subject<-read.table("./data/UCI HAR Dataset/train/subject_train.txt",header = FALSE,sep = "")
+train_subject<-read.table("./UCI HAR Dataset/train/subject_train.txt",header = FALSE,sep = "")
 
 # 1. Merges the training and the test sets to create one data set.
 Binded_set<-rbind(train_set,test_set)
