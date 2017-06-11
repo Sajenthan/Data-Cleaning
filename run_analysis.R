@@ -7,7 +7,7 @@ features$V2<-as.character(features$V2)
 features[562,]<-c(562,"act")
 
 activity<- read.table("./UCI HAR Dataset/activity_labels.txt",header = FALSE,sep = "")
-volunteer_test<-read.table("./data/UCI HAR Dataset/test/subject_test.txt",header = FALSE,sep = "")
+volunteer_test<-read.table("./UCI HAR Dataset/test/subject_test.txt",header = FALSE,sep = "")
 
 test_set<-read.table("./UCI HAR Dataset/test/X_test.txt",header = FALSE,sep = "")
 test_set_activity<-read.table("./UCI HAR Dataset/test/Y_test.txt",header = FALSE,sep = "")
