@@ -45,5 +45,5 @@ Binded_set<-cbind(Binded_set,Binded_subject)
 melted_set<-melt(Binded_set,id=c("subject","act"))
 tidy_set<-dcast(melted_set,subject+act~variable,mean)
 
-write.csv(tidy_set, "tidy.csv", row.names=FALSE)
+write.table(tidy_set, "tidy.txt", row.names=FALSE)
 

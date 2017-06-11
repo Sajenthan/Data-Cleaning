@@ -25,5 +25,5 @@ run_analysis.R included the follows:
 5. `Using cbind:`     
         Appropriately labels the data set with descriptive variable names.
 6. `Using melt, dcast:` 
-        to process the data From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject,        write into the file `tidy.csv`.
+        to process the data From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject,        write into the file `tidy.txt`.
 
