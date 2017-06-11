@@ -1,7 +1,6 @@
----
-title: "Code Book"
-output: github_document
----
+
+## Code Book
+
 
 This code book will describe how data is used in this project, as well as the processing required to create the resulting tidy data set in step process.
 
@@ -46,10 +45,10 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## run_analysis.R implementation:
 
-#####Manual step
+###Manual step
 Data downloaded, unziped and prepared for Data extraction and analysis
 
-#####Auto step
+###Auto step
 1. Read the Data 
 2. Using rbind: merges the training and the test sets to create one data set.
 3. Using grep: extracts only the measurements on the mean and standard deviation for each measurement
