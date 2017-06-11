@@ -1,4 +1,4 @@
-#Getting and Cleaning Data
+# Getting and Cleaning Data
 
 
 
@@ -14,7 +14,7 @@
 
 run_analysis.R included the follows:
 
-###Auto step
+### Auto step
 1. Read the Data 
 2. `Using rbind:`     
         merges the training and the test sets to create one data set.
